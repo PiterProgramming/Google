@@ -22,11 +22,11 @@ body {
 }
 
 .main-content {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .search-bar {
@@ -36,6 +36,8 @@ body {
     align-items: center;
     cursor: pointer;
     margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
 }
 
 .search-bar input {
