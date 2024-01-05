@@ -4,34 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
+    <title>Clon de Google</title>
     <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="#">Gmail</a>
-            <a href="#">Imágenes</a>
-        </div>
+    <main>
+        <header>
+            <div class="header">
+                <a href="https://gmail.com">Gmail <img src="Gmail.png" alt="Gmail" class="gmail"></a>
+                <a href="#">Imágenes</a>
+            </div>
 
-        <div class="main-container">
-            <img src="logo de google.png" alt="Logo de Google" class="logo-google">
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar con Google o escribir una URL">
-                <div class="buttons">
-                    <button>Buscar con Google</button>
-                    <button>Voy a tener suerte</button>
+            <div class="main-container">
+                <img src="logo de google.png" alt="Logo de Google" id="logo-google">
+                <div id="input-search">
+                    <input type="text" placeholder="Buscar con Google o escribir una URL">
+                    <div class="buttons">
+                        <a href="https://google.com" id="search" class="btn-search">Buscar con Google</a>
+                        <a href="https://doodles.google/" id="lucky" class="btn-search">Voy a tener suerte</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="footer">
-            <a href="#">Privacidad</a>
-            <a href="#">Condiciones</a>
-            <a href="#">Preferencias</a>
-        </div>
-
+        </main>
+        <footer class="footer">
+                <a href="#" class="footer-link">Privacidad</a>
+                <a href="#" class="footer-link">Condiciones</a>
+                <a href="#" class="footer-link">Preferencias</a>
+        </footer>
 </body>
 
 </html>

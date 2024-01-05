@@ -1,18 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    width: 100%;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+    height: 100%;
     margin: 0;
+    padding: 0;
+    font-family: ´roboto´ sans-serif;
+    font-size: 12px;
     background-color: #202124;
+    text-align: center;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    min-height: 100%;
 }
 
 .header {
     display: flex;
     justify-content: flex-end;
     padding: 15px;
+}
+
+.gmail {
+    width: 12px;
 }
 
 .header a {
@@ -23,83 +34,65 @@ body {
 
 .main-container {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    margin-top: 10vh;
+    justify-content: center;
+    padding-top: 160px;
 }
 
-.search-bar {
+#input-search {
     border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
     margin-bottom: 20px;
     width: 100%;
-    align-items: center;
 }
 
-.search-bar input {
-    width: 40%;
+#input-search input {
+    width: 50%;
     padding: 5px 10px;
     border: none;
     border-radius: 24px;
     font-size: 16px;
+    text-align: center;
     margin-bottom: 25px;
     background-color: transparent;
     border: 1px solid rgb(89, 89, 89);
-    color: white;
+    color: rgb(62, 56, 56);
 }
 
-.search-bar input:hover {
+#input-search input:hover {
     background-color: #36373a;
 }
 
-.logo-google {
-    height: 90px;
+#logo-google {
+    height: 100px;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.btn-search {
+        display: inline-block;
+        background-color: #353638;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        margin: 0;
+        font-size: 10px;
+        text-decoration: none; /* Elimina el subrayado de los enlaces */
+        cursor: pointer;
 }
 
-.buttons button {
-    padding: 5px 10px;
-}
-
-.search-bar button {
-    background-color: #353638;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin: 0;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.search-bar .buttons button {
-    padding: 5px 10px;
-    font-size: 12px;
-}
-
-.search-bar button:hover {
+.btn-search:hover {
     background-color: #323030;
 }
 
 .footer {
     position: absolute;
-    background-color: #020202;
-    width: 100%;
+    left: 0;
     bottom: 0;
+    width: 98.5%;
+    background-color: #020202;
     padding: 10px;
     text-align: center;
-    box-sizing: border-box;
-    margin-top: 15%;
     color: white;
 }
 
@@ -107,3 +100,9 @@ body {
     margin-right: 15px;
     font-size: 10px;
 }
+
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
